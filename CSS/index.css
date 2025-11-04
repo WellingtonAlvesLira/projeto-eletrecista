@@ -1,101 +1,180 @@
 *{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin: 0;
+padding: 0;
 }
-
 .cabecalho{
-    height: 70px;
-    display: flex;
-    align-items: center;
+height: 70px;
+display: flex;
+align-items: center;
 }
 .navegacao{
-    width: 50%;
-    margin: 0 auto;
-    height: 30px;
+margin: 0 auto;
+height: 30px;
 }
-
 .menu-navegacao{
-    list-style: none;
-    text-align: center;
+list-style: none;
+text-align: center;
 }
-
 .lista-navegacao{
-    display: inline;
-    text-transform: uppercase;
-    margin-left: 20px;
+display: inline;
+text-transform: uppercase;
+margin-left: 20px;
 }
-
 .link-navegacao{
-    text-decoration: none;
-    color: black;
+text-decoration: none;
+color: black;
 }
 .link-navegacao:hover{
-    color: rgb(156, 156, 25);
+color: rgb(156, 156, 25);
 }
-
 .secao-apresentacao{
-   background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 700px;
-   
-
+background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 700px;
 }
-
 .descricao-apresentacao{
-     width: 30%;
-     position: relative;
-     left: 100px;
-     top: 200px;
-     color: white;
-     background: rgba(0, 0, 0, 0.171);
-     padding: 5px;
+width: 30%;
+position: relative;
+left: 100px;
+top: 200px;
+color: white;
+background: rgba(0, 0, 0, 0.171);
+padding: 5px;
 }
-
 .descricao-apresentacao h1{
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    width: 50%;
+font-size: 2.5rem;
+margin-bottom: 10px;
+width: 50%;
 }
-
 .descricao-apresentacao p{
-    line-height: 20px;
+line-height: 20px;
+}
+.container{
+width: 80%; 
+margin: 0 auto; 
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: space-between;  
+gap: 100px;         
+}
+.orcamento{
+background-color: #f7e07b;
+width: 70%;
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding: 20px;
+margin-top: 20px;
+}
+.orcamento h2{
+width: 60%;
+}
+.orcamento a{
+text-decoration: none;
+border: 2px dotted white;
+background: black;
+color: white;
+text-transform: uppercase;
+padding: 10px;
+border-radius: 10px;
+transition: transform 0.3s ease;
 }
 
-.contratar{
-    margin: 0 auto;
+.orcamento a{
+animation: tremer 0.5s infinite;
+}
+
+/* Define os keyframes da animação */
+@keyframes tremer {
+    0% { transform: translateX(0); } /* Posição inicial */
+    25% { transform: translateX(-3px); } /* Move 3px para a esquerda */
+    50% { transform: translateX(3px); } /* Move 3px para a direita */
+    75% { transform: translateX(-3px); } /* Move 3px para a esquerda */
+    100% { transform: translateX(0); } /* Retorna à posição inicial */
+}
+.ver-servicos{
+display: flex; 
+justify-content: space-between;
+}
+
+.ver-servicos a:hover{
+background: black;
+color: #f7e07b;
+}
+
+.ver-servicos ul{
+list-style: none; 
+line-height: 30px;
+}
+.btn-servicos{
+text-decoration: none;
+background-color: #f7e07b;
+color: black;
+text-transform: uppercase;
+font-weight: 800;
+padding: 10px;
+border-radius: 10px;
+}
+
+.fotos-servicos{
+display: flex; 
+flex-wrap: wrap; 
+justify-content: center; 
+width: 90%; 
+gap: 10px;
+}
+
+.fotos-servicos img{
+    width:40%
+}
+
+.fotos-servicos img:hover{
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+
+
+
+@media (max-width: 768px){
+.secao-apresentacao {
+    background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 265px;
+}
+
+.descricao-apresentacao {
+        color: white;
+        background: rgba(0, 0, 0, 0.171);
+        padding: 5px;
+        width: 70%;
+        position: relative;
+        top: 15px;
+        left: 5px;
+}
+
+.descricao-apresentacao h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.orcamento {
+    background-color: #f7e07b;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    width: 80%;
-}
-
-.titulo-btn-contratar{
-    background-color: #f7e07b;
-    width: 70%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 20px;
+    justify-content: space-around;
     margin-top: 20px;
+    height: 160px;
 }
 
-.titulo-btn-contratar h2{
-    width: 60%;
+
+.orcamento h2 {
+    width: auto;
 }
 
-.titulo-btn-contratar a{
-    border: 2px dotted white;
-    background: black;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px;
-    border-radius: 10px;
-
-}
-
-.contratar ul{
-    list-style:circle;
 }
