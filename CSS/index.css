@@ -69,9 +69,7 @@ align-items: center;
 padding: 20px;
 margin-top: 20px;
 }
-.destaque-orcamento h2{
-width: 60%;
-}
+
 .destaque-orcamento a{
 text-decoration: none;
 border: 2px dotted white;
@@ -84,7 +82,7 @@ transition: transform 0.3s ease;
 }
 
 .destaque-orcamento a{
-animation: tremer 0.5s infinite;
+animation: tremer 0.6s infinite;
 }
 
 /* Define os keyframes da animação */
@@ -129,8 +127,16 @@ border-radius: 10px;
 display: flex; 
 flex-wrap: wrap; 
 justify-content: center; 
-width: 90%; 
 gap: 10px;
+}
+
+.background-servicos-recentes{
+width: 40%; 
+background: url(https://eletricistabh24h.com.br/wp-content/uploads/2020/08/ellett.jpg); 
+background-size: contain; 
+display: flex; 
+align-items: center; 
+justify-content: center;
 }
 
 .destaque-fotos-servicos img{
@@ -145,6 +151,7 @@ gap: 10px;
 
 
 
+/*responsividade*/
 @media (max-width: 768px){
 .secao-apresentacao {
     background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
@@ -198,10 +205,27 @@ gap: 10px;
     gap: 30px;
 }
 
+.background-servicos-recentes {
+    width: 90%;
+    height: 200px;
+    background: url(https://eletricistabh24h.com.br/wp-content/uploads/2020/08/ellett.jpg);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .destaque-ver-servicos-filho{
     width: auto;
     line-height: 25px;
     text-align: center;
 }
 
+.destaque-fotos-servicos img {
+    width: 90%;
 }
+
+}
+
+
+ 
