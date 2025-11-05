@@ -60,19 +60,19 @@ align-items:center;
 justify-content: space-between;  
 gap: 100px;         
 }
-.orcamento{
+.destaque-orcamento{
 background-color: #f7e07b;
-width: 70%;
+width: 75%;
 display: flex;
 justify-content:space-between;
 align-items: center;
 padding: 20px;
 margin-top: 20px;
 }
-.orcamento h2{
+.destaque-orcamento h2{
 width: 60%;
 }
-.orcamento a{
+.destaque-orcamento a{
 text-decoration: none;
 border: 2px dotted white;
 background: black;
@@ -83,7 +83,7 @@ border-radius: 10px;
 transition: transform 0.3s ease;
 }
 
-.orcamento a{
+.destaque-orcamento a{
 animation: tremer 0.5s infinite;
 }
 
@@ -95,21 +95,27 @@ animation: tremer 0.5s infinite;
     75% { transform: translateX(-3px); } /* Move 3px para a esquerda */
     100% { transform: translateX(0); } /* Retorna à posição inicial */
 }
-.ver-servicos{
+.destaque-ver-servicos{
 display: flex; 
 justify-content: space-between;
 }
 
-.ver-servicos a:hover{
+.destaque-ver-servicos-filho{
+    width: 30%; 
+    line-height: 25px;
+}
+
+.destaque-ver-servicos a:hover{
 background: black;
 color: #f7e07b;
 }
 
-.ver-servicos ul{
+.destaque-ver-servicos ul{
 list-style: none; 
 line-height: 30px;
 }
-.btn-servicos{
+
+.destaque-btn-servicos{
 text-decoration: none;
 background-color: #f7e07b;
 color: black;
@@ -119,7 +125,7 @@ padding: 10px;
 border-radius: 10px;
 }
 
-.fotos-servicos{
+.destaque-fotos-servicos{
 display: flex; 
 flex-wrap: wrap; 
 justify-content: center; 
@@ -127,11 +133,11 @@ width: 90%;
 gap: 10px;
 }
 
-.fotos-servicos img{
+.destaque-fotos-servicos img{
     width:40%
 }
 
-.fotos-servicos img:hover{
+.destaque-fotos-servicos img:hover{
     border-radius: 50px;
     border: 1px solid black;
 }
@@ -157,12 +163,22 @@ gap: 10px;
         left: 5px;
 }
 
-.descricao-apresentacao h1 {
-    font-size: 1.5rem;
+.descricao-apresentacao h1{
+    width: auto;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.orcamento {
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.destaque-orcamento {
     background-color: #f7e07b;
     width: 100%;
     display: flex;
@@ -172,9 +188,20 @@ gap: 10px;
     height: 160px;
 }
 
-
-.orcamento h2 {
+.destaque-orcamento h2 {
     width: auto;
+}
+
+.destaque-ver-servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.destaque-ver-servicos-filho{
+    width: auto;
+    line-height: 25px;
+    text-align: center;
 }
 
 }
