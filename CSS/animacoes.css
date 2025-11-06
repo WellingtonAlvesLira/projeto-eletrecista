@@ -1,0 +1,65 @@
+
+/*ANIMAÇÃO PARA O TITULO DA SEÇÃO APRESENTAÇÃO*/
+.descricao-apresentacao h1{
+font-size: 2.5rem;
+margin-bottom: 10px;
+overflow: hidden; /* 
+Garante que o conteúdo não seja revelado até a animação */
+border-right: .10em solid #f7e07b; /* The typwriter cursor */
+white-space: wrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em; /* Adjust as needed */ 
+animation: 
+typing 4.5s steps(40, end),
+blink-caret .7s step-end infinite;
+}
+/* Define o efeito de digitação */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+/* Define o efeito de digitação */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: #f7e07b; }
+}
+
+
+
+
+/*ANIMAÇÃO PARA O LINK "FAZER ORÇAMENTO"*/
+/*FONTE: https://www.google.com/search?q=%40keyframes+tremer+%7B+0%25+%7B+transform%3A+translateX%280%29%3B+%7D+%2F*
++Posi%C3%A7%C3%A3o+inicial+*%2F+25%25+%7B+transform%3A+translateX%28-3px%29%3B+%7D+%2F*+Move+3px+para+a+esquerda+*%2F+50%25+%7B+
+transform%3A+translateX%283px%29%3B+%7D+%2F*+Move+3px+para+a+direita+*%2F+75%25+%7B+transform%3A+translateX%28-3px%29%3B+%7D+%2F
+*+Move+3px+para+a+esquerda+*%2F+100%25+%7B+transform%3A+translateX%280%29%3B+%7D+%2F*+Retorna+%C3%A0+posi%C3%A7%C3%A3o+inicial+*%2F+%7D&gs
+_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzE5N2owajSoAgCwAgE&sourceid=chrome&ie=UTF-8&udm=50&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yz2OIO8EWX9DX1JDOVfANVg6Sh
+_lKDjgvwZnNaD_Hs0RnWw9Y4qS9pqQ8qBfPzJYbhoc8FEMs2xgp8O9ybgOo0Fd0rEREtdov2LUTSE68bYfMjT8oY_UqDSyBfPLjjR9z8rF9C0nAzVhJIfq7mlWGN6yvCxsjg7T1u-DWpXx
+nY18WUwfjuOVSlvIbQYMgQmSV4PhDxA&ved=2ahUKEwjk7paa-d2QAxWIdvUHHR-fLZYQ0NsOegQIAxAB&aep=10&ntc=1&mstk=AUtExfCgOpkleqoytTOEHvrt-0XXcZBSMOlmVnX0hm
+5aeL19GJyH_jyQZdPIJRyxC2fQyxQwD_VA_B4sXHh9rETQ3TaubwuVbUcgo2xuoHBsobiihmN8IVQRpwLZvYraB5wO9Awpfm4LiYwp19xee6csk78j03HeSoMPNaQIx1lfe2G2w1n2nbJtBCp
+ZdQALvxXYvvZzuLTz6UXTAiKlxYpd8Dc4PQ-F1weer1CW7FtAP5tGyQonOVBB3DmyE-yaFJFhRZe4pBsnhxggq5pcXqsPljjPVWAYTBeqtXlX6Kjj53--f1tcgXjlbACTG270Xp12VVZj1u5mdgX
+UgQ&csuir=1&mtid=Gs0MaauQLYOVvr0PiIKx2AI*/
+
+.destaque-orcamento a{
+text-align: center;
+text-decoration: none;
+border: 2px dotted white;
+background: black;
+color: white;
+text-transform: uppercase;
+padding: 10px;
+border-radius: 10px;
+transition: transform 0.4s ease;
+}
+.destaque-orcamento a{
+animation: tremer 0.6s infinite;
+}
+/* Define os quadros-chave da vibração */
+@keyframes tremer {
+0% { transform: translateX(0); } /* Posição inicial */
+25% { transform: translateX(-3px); } /* Move 3px para a esquerda */
+50% { transform: translateX(3px); } /* Move 3px para a direita */
+75% { transform: translateX(-3px); } /* Move 3px para a esquerda */
+100% { transform: translateX(0); } /* Retorna à posição inicial */
+}
+
+
