@@ -6,39 +6,6 @@ background-position: center;
 height: 550px;
 }
 
-/*FONTE: https://www.google.com/search?q=anima%C3%A7%C3%A3o+para+o+texto+da+esquerda++aparecer+na+tela+ap%C3%B3s+carregar+a+
-pagina&sca_esv=c019091b52478373&sxsrf=AE3TifNbrbDZ-SlA0StzrDin1HDJMQ8adA%3A1762873737114&ei=iVETaaHfBt-f5OUPwZvKqA4&ved=2ahUKE
-wiTjoSRs-qQAxV7C7kGHXdNPLwQ0NsOegQIAxAB&uact=5&sclient=gws-wiz-serp&udm=50&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yAFb4PvhjIUcDtaFHkK_
-tyspyDJg0-Y4Ji8bGEtEDNJFQduqi-TCs4_9mtRCleowrm4wkMMdmjI2QB42C-Jk-i89uBMbU7tPYZGq42zKl-sdKbT2diiPtbbsQdnoe9CzQsSshKneJQc0YuPdzkl
-QRfDTtfSbHtjvAMt0fNxkV4hSqVsf8-GZbUionqB4ShLJ9z0eCJw&aep=10&ntc=1&mtid=VlgTad71Oc3q1e8PoOblyA8&mstk=AUtExfBn0kxBHhSsCAco9mIIq-5dE
-_4We9b7j9G8uW496293yjMIfvYnmMp_134laaS6X_j2Xjp-IoCBIX_wq-VUGNFroz9ymXacdbZ-anzOQN3lWlOVVwDd4G2YtRxY3ZUv8uzAEhGv3sUZ7ftR9M9NSvQkG
-gnRZ6xmBeZ1HrQuHn2aCrRVUs3bLb1Z_jhxX77vqDQaaT0Bxohg_6Fzd-08u1C_GCq6s3hzVezyFVCDlqjwP5LR088nK3f_3Rs3mXxxRRnrJy0f9Bt_ZltCCu5rcx-JH7
-O-13BLINlyXxr_z8_wWu-rWkKJGYJiM8V9O2fpWJhVbN7tdhFgbQ&csuir=1*/
-
-.descricao-apresentacao{
-      opacity: 0;
-    transform: translateX(-100px); /* Move 100px para a esquerda */
-    
-    /* Aplica a animação */
-    animation-name: slideInLeft;
-    animation-duration: 1.5s; /* Duração da animação */
-    animation-timing-function: ease-out; /* Suaviza o final da animação */
-    animation-delay: 0.4s; /* Atraso antes de começar a animação após o carregamento */
-    animation-fill-mode: forwards; /* Mantém o estado final da animação */
-}
-
-/* Define os keyframes para a animação */
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px); /* Início da animação (invisível, à esquerda) */
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0); /* Fim da animação (visível, na posição original) */
-    }
-}
-
 
 
 .secao-apresentacao-sobre h2{
@@ -50,10 +17,11 @@ margin-bottom: 5px;
 .secao-apresentacao-sobre p{
 font-size: 1.2rem;
 }
+
 .sobre{
+margin-top: 50px;
 display: flex;
 align-items: center;
-height: 600px;
 text-align: center;
 }
 .descricao-sobre h1{
@@ -70,19 +38,23 @@ padding: 15px;
 .img-sobre{
 width: 50%;
 }
-/*responsividade*/
+
+
+
+
+/*responsividade SOBRE*/
 @media (max-width: 820px){
 .sobre {
     margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 600px;
     text-align: center;
 }
 
 .img-sobre {
     width: 100%;
 }
+
 
 }
