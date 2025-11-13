@@ -29,10 +29,6 @@ padding: 15px;
 .img-sobre{
 width: 50%;
 }
-
-
-
-
 /*FONTE */           
 /*https://www.google.com/search?q=PERPLEX+NA+IMG+css&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQI
 RigATIHCAUQIRigAdIBCDY4NzJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&sei=aagUabbxA--XwbkPv9-24AE&udm=50&fbs=AIIjpHydJdUtNKrM02hj0s4n
@@ -52,12 +48,16 @@ align-items:center;
 text-align: center;
 }
 .parallax-section-items{
+background: rgba(0, 0, 0, 0.445);
 width: 20%;
+height: 250px;
 color: white;
+padding: 10px;
+border-left: 5px solid white;
+border-bottom: 2px solid white;
+border-radius: 10px;
+line-height: 2;
 }
-
-
-
 /*responsividade SOBRE*/
 @media (max-width: 820px){
 .sobre {
@@ -69,7 +69,20 @@ flex-direction: column;
 .img-sobre {
 width: 100%;
 }
+.parallax-section-items {
+background: rgba(0, 0, 0, 0.445);
+width: auto;
+height: 250px;
+color: white;
+padding: 10px;
+border-left: 5px solid white;
+border-bottom: 2px solid white;
+border-radius: 10px;
+line-height: 2;
+}
 .parallax-section {
 background-position: top;
+flex-direction: column;
+height: 700px;
 }
 }

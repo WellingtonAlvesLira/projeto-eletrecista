@@ -4,7 +4,7 @@ font-size: 2.5rem;
 margin-bottom: 10px;
 overflow: hidden; /* 
 Garante que o conteúdo não seja revelado até a animação */
-border-right: .10em solid #f7e07b; /* The typwriter cursor */
+border-right: .10em solid rgba(60, 214, 219, 0.116); /* The typwriter cursor */
 white-space: wrap; /* Keeps the content on a single line */
 margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 letter-spacing: .15em; /* Adjust as needed */ 
@@ -20,7 +20,7 @@ to { width: 100% }
 /* Define o efeito de digitação */
 @keyframes blink-caret {
 from, to { border-color: transparent }
-50% { border-color: #f7e07b; }
+50% { border-color: rgba(60, 214, 219, 0.856); }
 }
 
 
