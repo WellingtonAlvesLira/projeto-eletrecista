@@ -19,7 +19,7 @@ align-items: center;
 text-align: center;
 }
 .descricao-sobre h1{
-font-size: 2.5rem;
+font-size: 2rem;
 }
 .descricao-sobre p{
 text-align: start;
@@ -80,9 +80,52 @@ padding: 30px;
 border-radius: 50%;
 }
 .texto-estrategia{
-font-size: 1.125rem;
+font-size: 1.2rem;
 line-height: 1.6;
-margin-right: 20px;
+text-align: center;
+}
+.time{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 90%;
+height: 500px;
+}
+.time h1{
+text-align: center;
+font-size: 2.5rem;
+}
+.quadro-time{
+height: 400px;
+background: rgba(231, 229, 229, 0.507);
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.info-time {
+text-align: center;
+line-height: 2;
+border-bottom: 1px solid black;
+padding: 5px;
+margin-top: 25px;
+margin-bottom: 20px;
+}
+.img-profissionais{
+width:230px; 
+height: 230px;
+border-radius: 50%;
+}
+.img-redes-socias {
+width: 10%;
+height: 15%;
+}
+.info-time h5{
+font-weight: 400;
+font-size: 1.45rem;
+}
+.info-time h6{
+font-size: 1.15rem;
+margin-bottom: 5px;
 }
 /*responsividade SOBRE*/
 @media (max-width: 820px){
@@ -115,5 +158,30 @@ height: 700px;
 width: 90% !important; 
 align-items: center;
 gap: 20px;
+}
+.time{
+gap: 20px;
+}
+.time h1 {
+text-align: center;
+font-size: 2rem !important;
+}
+.quadro-time {
+flex-direction: column;
+height: auto !important;
+}
+.info-time {
+text-align: center;
+line-height: 2;
+padding: 30px;
+}
+.img-profissionais{
+width: 220px;
+height: 220px;
+border-radius: 50%;
+}
+.img-redes-socias {
+width: 20% !important;
+height: 10% !important;
 }
 }
