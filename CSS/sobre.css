@@ -183,4 +183,7 @@ border-radius: 50%;
 width: 20% !important;
 height: 10% !important;
 }
+    .numeracao-estrategia {
+    width: auto !important;
+    }
 }

@@ -296,4 +296,22 @@ align-items: center;
 footer h1{
 text-align: center;
 }
+
+    .secao-estrategia {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+        .depoimento-items {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+        .img-estrategia {
+        width: 50% !important;
+    }
 }
