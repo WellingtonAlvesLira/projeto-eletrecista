@@ -102,7 +102,6 @@ gap: 10px;
 }
 .background-servicos-recentes{
 width: 40%; 
-background: url(https://eletricistabh24h.com.br/wp-content/uploads/2020/08/ellett.jpg); 
 background-size: contain; 
 display: flex; 
 align-items: center; 
@@ -146,7 +145,7 @@ padding: 6px;
 text-transform: uppercase;
 }
 .titulo-localizao-contato{
-font-size: 2.5rem;
+font-size: 2rem;
 text-align: center;
 }
 .localizacao-endereco-contato{
@@ -162,10 +161,12 @@ padding: 10px;
 width: 320px;
 }
 .entrar-em-contato{
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 .entrar-em-contato h3{
 font-size: 1.5rem;
@@ -174,7 +175,7 @@ width: 170px;
 text-decoration: underline;
 }
 .entrar-em-contato h1{
-font-size: 2.5rem;
+font-size: 2rem;
 }
 form{
 display: flex; 

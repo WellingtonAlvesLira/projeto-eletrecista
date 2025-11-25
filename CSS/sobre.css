@@ -84,19 +84,19 @@ font-size: 1.2rem;
 line-height: 1.6;
 }
 .time{
+height: 600px;
+margin-top: 15px;
+margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 width: 90%;
-height: 500px;
 }
 .time h1{
 text-align: center;
 font-size: 2.5rem;
 }
 .quadro-time{
-height: 400px;
-background: rgba(231, 229, 229, 0.507);
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -159,7 +159,7 @@ align-items: center;
 gap: 20px;
 }
 .time{
-gap: 20px;
+height: auto;
 }
 .time h1 {
 text-align: center;
@@ -167,7 +167,6 @@ font-size: 2rem !important;
 }
 .quadro-time {
 flex-direction: column;
-height: auto !important;
 }
 .info-time {
 text-align: center;
