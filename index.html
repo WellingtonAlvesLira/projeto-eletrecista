@@ -5,6 +5,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>HOME</title>
       <link rel="stylesheet" href="CSS/index.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
    </head>
    <body>
       <header class="cabecalho">
@@ -187,12 +190,14 @@
                <h1>
                   Sinta-se livre para me perguntar qualquer coisa...
                </h1>
-               <form action="" method="post">
+               <form method="post" id="contact-form">
                   <label for="nome">Nome:</label>
-                  <input type="text" name="nome" id="nome" required placeholder="fulano de tal">
+                  <input type="text" name="name" id="name" required placeholder="fulano de tal">
+                  <label>Assunto</label>
+                  <input type="text" name="subject" id="subject" required>
                   <label for="email">E-mail:</label>
                   <input type="email" name="email" id="email" placeholder="exemplo@mail.com">
-                  <textarea name="msg" id="msg" placeholder="fique a vontade para perguntar qualquer coisa..."></textarea>
+                  <textarea name="message" id="message" placeholder="fique a vontade para perguntar qualquer coisa..."></textarea>
                   <input type="submit" value="enviar">
                </form>
             </section>
@@ -202,5 +207,6 @@
          <h1>Luiz - Eletricidade em geral</h1>
          <span>Desenvolvido por: Wellington Alves</span>
       </footer>
+      <script src="JS/form.js"></script>
    </body>
 </html>
