@@ -1,13 +1,12 @@
 /*ANIMAÇÃO PARA O TITULO DA SEÇÃO APRESENTAÇÃO DA PAGINA HOME*/
 .descricao-apresentacao h1{
-font-size: 2.5rem;
+font-size: 3.75rem;
 margin-bottom: 10px;
 overflow: hidden; /* 
 Garante que o conteúdo não seja revelado até a animação */
 border-right: .10em solid rgba(60, 214, 219, 0.116); /* The typwriter cursor */
 white-space: wrap; /* Keeps the content on a single line */
 margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-letter-spacing: .15em; /* Adjust as needed */ 
 animation: 
 typing 4.5s steps(40, end),
 blink-caret .7s step-end infinite;
@@ -20,7 +19,7 @@ to { width: 100% }
 /* Define o efeito de digitação */
 @keyframes blink-caret {
 from, to { border-color: transparent }
-50% { border-color: rgba(60, 214, 219, 0.856); }
+70% { border-color: rgba(8, 8, 8, 0.856); }
 }
 
 
