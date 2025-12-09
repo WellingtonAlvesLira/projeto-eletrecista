@@ -250,20 +250,6 @@ height: 250px;
         margin-bottom: 10px;
     }
 
-    .descricao-apresentacao p {
-        line-height: 17px;
-        width: 80%;
-        text-align: end;
-        font-size: 1.1rem;
-    }
-
-        .destaque-orcamento {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        height: 190px !important;
-        }
 .container{
 width: 80%;
 margin: 0 auto;
@@ -272,17 +258,28 @@ flex-direction: column;
 align-items: center;
 gap: 40px;
 }
-.destaque-orcamento {
-width: 100%;
-display: flex;
-flex-direction: column;
-margin-top: 20px;
-height: 160px;
-}
-.destaque-orcamento h2 {
+        .destaque-orcamento {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 140px !important;
+        }
+        .destaque-orcamento h2 {
 width: auto;
-    font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
 }
+
+    .descricao-apresentacao p {
+        line-height: 17px;
+        width: 80%;
+        text-align: end;
+        font-size: 1.1rem;
+    }
+
+
+
 .destaque-ver-servicos{
 display: flex;
 flex-direction: column;
@@ -299,11 +296,10 @@ justify-content: center;
 
 .destaque-ver-servicos ul {
     list-style: none;
-    font-size: 1.1rem;
 
 }
     .destaque-ver-servicos li {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.4;
         text-align: start;
         margin-bottom: 15px;
@@ -317,13 +313,14 @@ justify-content: center;
         height: 220px;
 }
 .destaque-ver-servicos-filho h2 {
-font-size: 2rem;
+font-size: 1.875rem;
 }
 
 .destaque-ver-servicos-filho p{
-
+    
     margin-bottom: 20px;
     font-size: 1.1rem;
+    text-align: start;  
 }
 .background-servicos-recentes {
 width: 90%;
@@ -338,19 +335,23 @@ justify-content: center;
         width: 100%;
     }
     .titulo-servicos {
-    font-size: 2rem;
+            font-size: 1.875rem;
 }
 .tipos-de-servicos {
         width: 100%;
 }
 .titulo-localizao-contato {
-    font-size: 2rem;
+            font-size: 1.875rem;
     text-align: center;
 }
 .localizacao-endereco-contato {
 display: flex;
 flex-direction: column;
 align-items: center;
+}
+.entrar-em-contato h1 {
+    font-size: 1.875rem;
+    text-align: center;
 }
 footer h1{
 text-align: center;
@@ -362,7 +363,7 @@ text-align: center;
         gap: 50px;
     }
     .titulo-depoimento {
-    font-size: 2rem !important;
+    font-size: 1.875rem !important;
     width: 100%;
     text-align: center;
 }
@@ -379,3 +380,136 @@ text-align: center;
         width: 50% !important;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px){
+.container {
+    width: 95%;
+}
+
+  .descricao-apresentacao {
+    width: 80%;
+    position: relative;
+    left: 30px;
+    top: 200px;
+    color: white;
+    background: rgba(0, 0, 0, 0.171);
+    padding: 10px;
+  }
+
+  .destaque-ver-servicos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.destaque-ver-servicos-filho {
+    width: 50%;
+    line-height: 50px;
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destaque-ver-servicos-filho p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.destaque-btn-servicos {
+    text-align: center;
+}
+
+.lista-servicos{
+    width: 35%;
+}
+
+.destaque-ver-servicos li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.tipos-de-servicos-items {
+        width: 360px;
+    height: 300px;
+}
+
+.depoimento-items {
+    text-align: center;
+    width: auto !important  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-estrategia {
+    font-weight: bold;
+    border-radius: 100%;
+    width: 110px !important;
+    height: 110px !important;
+}
+
+}
+
+@media (min-width: 820px) and (max-width: 1199px) {
+    .container {
+    width: 95%;
+    }
+    .descricao-apresentacao {
+    width: 67%;
+    position: relative;
+    left: 100px;
+    top: 200px;
+    color: white;
+    background: rgba(0, 0, 0, 0.171);
+    padding: 10px;
+}
+
+.descricao-apresentacao p {
+    font-size: 1.40rem;
+    line-height: 30px;
+}
+
+.destaque-ver-servicos-filho {
+    width: 40%;
+    line-height: 53px;
+}
+.background-servicos-recentes {
+    width: 48%;
+}
+.destaque-fotos-servicos img {
+    width: 48%;
+}
+.tipos-de-servicos-items {
+    width: 480px;
+}
+
+.secao-depoimento {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.depoimento-items {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.img-estrategia {
+    width: 40% !important;
+    height: 125px !important;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+}
+@media (max-width: 991px){
+
+        .tipos-de-servicos-items {
+        width: 362px;
+    }
+
+    
+}
+
