@@ -376,8 +376,9 @@ text-align: center;
         gap: 20px;
     }
 
-        .img-estrategia {
-        width: 50% !important;
+    .img-estrategia {
+        width: 110px !important;
+        height: 110px !important;
     }
 }
 
@@ -441,6 +442,9 @@ text-align: center;
     align-items: center;
     gap: 20px;
 }
+.texto-depoimento {
+ font-size: 1rem;
+}
 
 .img-estrategia {
     font-weight: bold;
@@ -485,9 +489,8 @@ text-align: center;
 }
 
 .secao-depoimento {
-    width: 80%;
+    width: 92%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -496,13 +499,16 @@ text-align: center;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    text-align: center;
 }
+
 .img-estrategia {
-    width: 40% !important;
-    height: 125px !important;
+    width: 110px !important;
+    height: 110px !important;
     border-radius: 100%;
     margin: 0 auto;
 }
+
 }
 @media (max-width: 991px){
 
