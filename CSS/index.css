@@ -182,10 +182,9 @@ width: 320px;
     gap: 20px;
 }
 .entrar-em-contato h3{
-font-size: 1.5rem;
+font-size: 1.875rem;
 font-weight: 100;
-width: 170px;
-text-decoration: underline;
+width: auto;
 }
 .entrar-em-contato h1{
 font-size: 2rem;
@@ -223,7 +222,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
-margin-top: 15px;
+margin-top: 40px;
 color: #ffffff;
 background-color: #333333;
 height: 250px;
@@ -349,10 +348,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-.entrar-em-contato h1 {
-    font-size: 1.875rem;
-    text-align: center;
-}
+    .entrar-em-contato h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: emoji;
+    }
 footer h1{
 text-align: center;
 }
@@ -418,6 +418,7 @@ text-align: center;
 
 .destaque-btn-servicos {
     text-align: center;
+    margin-top: 10px;
 }
 
 .lista-servicos{
@@ -430,7 +431,7 @@ text-align: center;
 }
 
 .tipos-de-servicos-items {
-        width: 360px;
+    width: 360px;
     height: 300px;
 }
 
@@ -455,7 +456,7 @@ text-align: center;
 
 }
 
-@media (min-width: 820px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .container {
     width: 95%;
     }
@@ -478,6 +479,7 @@ text-align: center;
     width: 40%;
     line-height: 53px;
 }
+
 .background-servicos-recentes {
     width: 48%;
 }
