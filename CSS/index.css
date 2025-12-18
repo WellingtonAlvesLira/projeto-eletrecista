@@ -1,523 +1,599 @@
 @import url(animacoes.css);
-*{
-margin: 0;
-padding: 0;
-}
-.cabecalho{
-height: 70px;
-display: flex;
-align-items: center;
-}
-.navegacao{
-margin: 0 auto;
-height: 30px;
-}
-.menu-navegacao{
-list-style: none;
-text-align: center;
-}
-.lista-navegacao{
-display: inline;
-text-transform: uppercase;
-margin-left: 20px;
-}
-.link-navegacao{
-text-decoration: none;
-color: black;
-font-weight: 800;
-}
-.link-navegacao:hover{
-color: rgb(60, 214, 219);
-}
-.secao-apresentacao{
-background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 700px;
-}
-.descricao-apresentacao{
-width: 30%;
-position: relative;
-left: 100px;
-top: 200px;
-color: white;
-background: rgba(0, 0, 0, 0.171);
-padding: 10px;
-}
-.descricao-apresentacao p{
-font-size: 1.25rem;
-line-height: 30px;
-}
-.container{
-width: 80%; 
-margin: 0 auto; 
-display: flex;
-flex-direction: column;
-align-items:center;
-justify-content: space-between;  
-gap: 100px;         
-}
-.destaque-orcamento{
-background-color: rgba(60, 214, 219, 0.116);
-display: flex;
-justify-content:space-between;
-align-items: center;
-padding: 20px;
-margin-top: 20px;
-}
-.destaque-orcamento h2{
-font-size: 2.25rem;
-width: 60%;
-}
-.destaque-ver-servicos{
-display: flex; 
-justify-content: space-between;
-}
-.destaque-ver-servicos-filho{
-width: 50%; 
-line-height: 50px;
-}
-.destaque-ver-servicos-filho h2{
-margin-bottom: 15px;
-font-size: 3rem;
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.destaque-ver-servicos-filho p{
-        line-height: 1.2;
-        font-size: 1.3rem;
-}
-.destaque-ver-servicos ul{
-list-style: none; 
-line-height: 30px;
-}
-.destaque-ver-servicos li{
-    font-size: 1.5rem;
-    line-height: 2.3;
-}
-.destaque-btn-servicos{
-text-decoration: none;
-background-color: black;
-color: white;
-text-transform: uppercase;
-padding: 10px;
-border-radius: 10px;
-}
-.destaque-fotos-servicos{
-display: flex; 
-flex-wrap: wrap; 
-justify-content: center; 
-gap: 10px;
-}
-.background-servicos-recentes{
-width: 40%; 
-background-size: contain; 
-display: flex; 
-align-items: center; 
-justify-content: center;
-background-color: #111111;
-}
-.destaque-fotos-servicos img{
-width:40%
-}
-.destaque-fotos-servicos img:hover{
-border-radius: 50px;
-border: 1px solid black;
-}
-.titulo-servicos{
-    font-size: 3rem;
-}
-.tipos-de-servicos{
-display: flex;
-flex-wrap: wrap;
-gap: 5px;
-justify-content: center;
-}
-.tipos-de-servicos-items{
-text-align: center;
-width: 400px;
-height: 300px;
-gap: 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: rgba(153, 151, 151, 0.658);
-}
-.tipos-de-servicos-items img{
-width: 15%;
-margin-bottom: 4px;
-}
-.fundo-azul{
-background-color: rgba(60, 214, 219, 0.116);
-}
-.tipos-de-servicos-items p{
-font-size: 1.2rem;
-padding: 6px;
-}
-.tipos-de-servicos-items h2{
-text-transform: uppercase;
-}
-.titulo-localizao-contato{
-font-size: 3rem;
-text-align: center;
-}
-.localizacao-endereco-contato{
-display: flex;
-gap: 20px;
-justify-content: center;
-}
-.contato{
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-align-self: center;
-line-height: 2;
-padding: 10px;
-width: 320px;
-}
-.entrar-em-contato{
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.entrar-em-contato h3{
-font-size: 1.875rem;
-font-weight: 100;
-width: auto;
-}
-.entrar-em-contato h1{
-font-size: 2rem;
-}
-form{
-display: flex; 
-flex-direction: column;
-align-items: center;
-}
-label{
-text-transform: uppercase;
-margin-bottom: 3px;
-}
-input{
-text-transform: uppercase;
-width: 350px;
-height: 40px;
-margin-bottom: 10px;
-padding: 2px;
-background-color: rgba(60, 214, 219, 0.116);
-}
-textarea{
-width: 350px;
-height: 150px;
-margin-bottom: 10px;
-padding: 2px;
-text-transform: uppercase;
-}
-input[type="submit"]{
-width: 200px;
-text-transform: uppercase;
-}
-footer{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-margin-top: 40px;
-color: #ffffff;
-background-color: #333333;
-height: 250px;
-}
-/*responsividade*/
-@media (max-width: 575px){
-.secao-apresentacao {
-        background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        height: 400px;
-    }
-    .descricao-apresentacao {
-        padding: 5px;
-        width: auto;
-        position: relative;
-        top: 170px;
-        left: 5px;
-        width: 90%;
-    }
-    .descricao-apresentacao h1 {
-        font-size: 2.25rem;
-        margin-bottom: 10px;
-    }
-
-.container{
-width: 80%;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 40px;
-}
-        .destaque-orcamento {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        height: 140px !important;
-        }
-        .destaque-orcamento h2 {
-width: auto;
-        font-size: 1.5rem;
-        text-align: center;
+.cabecalho {
+	height: 70px;
+	display: flex;
+	align-items: center;
 }
 
-    .descricao-apresentacao p {
-        line-height: 17px;
-        width: 80%;
-        text-align: end;
-        font-size: 1.1rem;
-    }
-
-
-
-.destaque-ver-servicos{
-display: flex;
-flex-direction: column;
-}
-.background-servicos-recentes {
-width: 100% !important;
-height: 200px;
-background: url(https://eletricistabh24h.com.br/wp-content/uploads/2020/08/ellett.jpg);
-background-size: contain;
-display: flex;
-align-items: center;
-justify-content: center;
+.navegacao {
+	margin: 0 auto;
+	height: 30px;
 }
 
-.destaque-ver-servicos ul {
-    list-style: none;
-
-}
-    .destaque-ver-servicos li {
-        font-size: 1.1rem;
-        line-height: 1.4;
-        text-align: start;
-        margin-bottom: 15px;
-    }
-.destaque-ver-servicos-filho {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        line-height: 25px;
-        text-align: center;
-        height: 220px;
-}
-.destaque-ver-servicos-filho h2 {
-font-size: 1.875rem;
+.menu-navegacao {
+	list-style: none;
+	text-align: center;
 }
 
-.destaque-ver-servicos-filho p{
-    
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    text-align: start;  
-}
-.background-servicos-recentes {
-width: 90%;
-height: 200px;
-background: url(https://eletricistabh24h.com.br/wp-content/uploads/2020/08/ellett.jpg);
-background-size: cover;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-    .destaque-fotos-servicos img {
-        width: 100%;
-    }
-    .titulo-servicos {
-            font-size: 1.875rem;
-}
-.tipos-de-servicos {
-        width: 100%;
-}
-.titulo-localizao-contato {
-            font-size: 1.875rem;
-    text-align: center;
-}
-.localizacao-endereco-contato {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-    .entrar-em-contato h1 {
-        font-size: 1.2rem;
-        text-align: center;
-        font-family: emoji;
-    }
-footer h1{
-text-align: center;
+.lista-navegacao {
+	display: inline;
+	text-transform: uppercase;
+	margin-left: 20px;
 }
 
-    .secao-estrategia {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-    .titulo-depoimento {
-    font-size: 1.875rem !important;
-    width: 100%;
-    text-align: center;
+.link-navegacao {
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
 }
 
-        .depoimento-items {
-        width: 100% !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .img-estrategia {
-        width: 110px !important;
-        height: 110px !important;
-    }
+.link-navegacao:hover {
+	color: rgba(245, 211, 62, 0.959);
+}
+.secao-banner {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 600px;
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+.secao-banner-fundo-home{
+		background-image: url(https://assets.nicepagecdn.com/11a8ddce/6135491/images/electrician-builder-with-beard-worker-white-helmet-work-installation-lamps-height-professional-overalls-with-drill-background-repair-site.jpg);
+
+}
+
+.descricao-banner {
+	width: 30%;
+	position: relative;
+	left: 100px;
+	top: 200px;
+	
+	padding: 10px;
+}
+
+.descricao-banner p {
+	font-size: 1.25rem;
+	line-height: 23px;
+}
+
 .container {
-    width: 95%;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 100px;
 }
 
-  .descricao-apresentacao {
-    width: 80%;
-    position: relative;
-    left: 30px;
-    top: 200px;
-    color: white;
-    background: rgba(0, 0, 0, 0.171);
-    padding: 10px;
-  }
+.destaque-orcamento {
+	background-color:  rgba(245, 211, 62, 0.959);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	margin-top: 50px;
+}
 
-  .destaque-ver-servicos {
-    display: flex;
-    justify-content: space-around;
+.destaque-orcamento h2 {
+	font-size: 2.25rem;
+	width: 60%;
+}
+
+.destaque-ver-servicos {
+	display: flex;
+	justify-content: space-between;
 }
 
 .destaque-ver-servicos-filho {
-    width: 50%;
-    line-height: 50px;
-    height: 305px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	width: 50%;
+	line-height: 50px;
+}
+
+.destaque-ver-servicos-filho h2 {
+	margin-bottom: 15px;
+	font-size: 3rem;
 }
 
 .destaque-ver-servicos-filho p {
-    line-height: 1.5;
-    font-size: 1.5rem;
+	line-height: 1.2;
+	font-size: 1.3rem;
 }
 
-.destaque-btn-servicos {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.lista-servicos{
-    width: 35%;
+.destaque-ver-servicos ul {
+	list-style: none;
+	line-height: 30px;
 }
 
 .destaque-ver-servicos li {
-    font-size: 1.5rem;
-    line-height: 1.5;
+	font-size: 1.5rem;
+	line-height: 2.3;
+}
+
+.destaque-btn-servicos {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.destaque-fotos-servicos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.background-servicos-recentes {
+	width: 40%;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #111111;
+}
+
+.destaque-fotos-servicos img {
+	width: 40%
+}
+
+.destaque-fotos-servicos img:hover {
+	border-radius: 50px;
+	border: 1px solid black;
+}
+
+.titulo-servicos {
+	font-size: 3rem;
+}
+
+.tipos-de-servicos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	justify-content: center;
 }
 
 .tipos-de-servicos-items {
-    width: 360px;
-    height: 300px;
+	text-align: center;
+	width: 400px;
+	height: 300px;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.depoimento-items {
-    text-align: center;
-    width: auto !important  ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-.texto-depoimento {
- font-size: 1rem;
+.tipos-de-servicos-items img {
+	width: 15%;
+	margin-bottom: 4px;
 }
 
-.img-estrategia {
-    font-weight: bold;
-    border-radius: 100%;
-    width: 110px !important;
-    height: 110px !important;
+.fundo-azul {
+	background-color:  rgba(245, 211, 62, 0.959);
 }
+
+.tipos-de-servicos-items p {
+	font-size: 1.2rem;
+	padding: 6px;
+}
+
+.tipos-de-servicos-items h2 {
+	text-transform: uppercase;
+}
+
+.titulo-localizao-contato {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.localizacao-endereco-contato {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.contato {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	align-self: center;
+	line-height: 2;
+	padding: 10px;
+	width: 320px;
+}
+
+.entrar-em-contato {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.entrar-em-contato h3 {
+	font-size: 1.875rem;
+	font-weight: 100;
+	width: auto;
+}
+
+.entrar-em-contato h1 {
+	font-size: 2rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+input {
+	text-transform: uppercase;
+	width: 350px;
+	height: 40px;
+	margin-bottom: 10px;
+	padding: 2px;
+	background-color: rgba(245, 211, 62, 0.959);
+}
+
+textarea {
+	width: 350px;
+	height: 150px;
+	margin-bottom: 10px;
+	padding: 2px;
+	text-transform: uppercase;
+}
+
+input[type="submit"] {
+	width: 200px;
+	text-transform: uppercase;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	color: #ffffff;
+	background-color: #333333;
+	height: 250px;
+}
+
+/*responsividade*/
+@media (max-width: 580px) {
+	.secao-banner {
+    background-repeat: no-repeat;
+    background-size: 200%;
+    height: 400px;
+
+}
+    .descricao-banner {
+		background-color: #33333341;
+		color: white;
+        padding: 10px;
+        width: auto;
+        position: relative;
+        top: 125px;
+        left: 5px;
+        width: 90%;
+    }
+
+.descricao-banner h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+	.descricao-banner p {
+    font-size: 1.21rem;
+    line-height: 23px;
+}
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
+
+	.destaque-orcamento {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		height: 140px !important;
+	}
+
+	.destaque-orcamento h2 {
+		width: auto;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.descricao-apresentacao p {
+		line-height: 17px;
+		width: 80%;
+		text-align: end;
+		font-size: 1.1rem;
+	}
+
+
+	.destaque-ver-servicos {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.background-servicos-recentes {
+		width: 100% !important;
+		height: 200px;
+		background: url(https://eletricistabh24h.com.br/wp-content/uploads/2020/08/ellett.jpg);
+		background-size: contain;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.destaque-ver-servicos ul {
+		list-style: none;
+
+	}
+
+	.destaque-ver-servicos li {
+		font-size: 1.1rem;
+		line-height: 1.4;
+		text-align: start;
+		margin-bottom: 15px;
+	}
+
+	.destaque-ver-servicos-filho {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		line-height: 25px;
+		text-align: center;
+		height: 220px;
+	}
+
+	.destaque-ver-servicos-filho h2 {
+		font-size: 1.875rem;
+	}
+
+	.destaque-ver-servicos-filho p {
+
+		margin-bottom: 20px;
+		font-size: 1.1rem;
+		text-align: start;
+	}
+
+	.background-servicos-recentes {
+		width: 90%;
+		height: 200px;
+		background: url(https://eletricistabh24h.com.br/wp-content/uploads/2020/08/ellett.jpg);
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.destaque-fotos-servicos img {
+		width: 100%;
+	}
+
+	.titulo-servicos {
+		font-size: 1.875rem;
+	}
+
+	.tipos-de-servicos {
+		width: 100%;
+	}
+
+	.titulo-localizao-contato {
+		font-size: 1.875rem;
+		text-align: center;
+	}
+
+	.localizacao-endereco-contato {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.entrar-em-contato h1 {
+		font-size: 1.2rem;
+		text-align: center;
+		font-family: emoji;
+	}
+
+	footer h1 {
+		text-align: center;
+	}
+
+	.secao-estrategia {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	.titulo-depoimento {
+		font-size: 1.875rem !important;
+		width: 100%;
+		text-align: center;
+	}
+
+	.depoimento-items {
+		width: 100% !important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.img-estrategia {
+		width: 110px !important;
+		height: 110px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.secao-banner {
+        background-repeat: no-repeat;
+        background-size: 126%;
+        background-position: left;
+        height: 600px;
+    }
+	.container {
+		width: 95%;
+	}
+
+	.descricao-banner {
+		width: 70%;
+		position: relative;
+		left: 30px;
+		top: 200px;
+		color: white;
+		background: rgba(0, 0, 0, 0.171);
+		padding: 10px;
+	}
+
+	.destaque-ver-servicos {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.destaque-ver-servicos-filho {
+		width: 50%;
+		line-height: 50px;
+		height: 305px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.destaque-ver-servicos-filho p {
+		line-height: 1.5;
+		font-size: 1.5rem;
+	}
+
+	.destaque-btn-servicos {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.lista-servicos {
+		width: 35%;
+	}
+
+	.destaque-ver-servicos li {
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.tipos-de-servicos-items {
+		width: 360px;
+		height: 300px;
+	}
+
+	.depoimento-items {
+		text-align: center;
+		width: auto !important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.texto-depoimento {
+		font-size: 1rem;
+	}
+
+	.img-estrategia {
+		font-weight: bold;
+		border-radius: 100%;
+		width: 110px !important;
+		height: 110px !important;
+	}
 
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    .container {
-    width: 95%;
-    }
-    .descricao-apresentacao {
-    width: 67%;
-    position: relative;
-    left: 100px;
-    top: 200px;
-    color: white;
-    background: rgba(0, 0, 0, 0.171);
-    padding: 10px;
-}
+	.container {
+		width: 95%;
+	}
 
-.descricao-apresentacao p {
-    font-size: 1.40rem;
-    line-height: 30px;
-}
-
-.destaque-ver-servicos-filho {
-    width: 40%;
-    line-height: 53px;
-}
-
-.background-servicos-recentes {
-    width: 48%;
-}
-.destaque-fotos-servicos img {
-    width: 48%;
-}
-.tipos-de-servicos-items {
-    width: 480px;
-}
-
-.secao-depoimento {
-    width: 92%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-.depoimento-items {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    text-align: center;
-}
-
-.img-estrategia {
-    width: 110px !important;
-    height: 110px !important;
-    border-radius: 100%;
-    margin: 0 auto;
-}
-
-}
-@media (max-width: 991px){
-
-        .tipos-de-servicos-items {
-        width: 362px;
+    .descricao-banner {
+		width: 70%;
+        position: relative;
+		left: 0;
+        top: 200px;
+        color: white;
+        background: rgba(0, 0, 0, 0.171);
+        padding: 20px;
     }
 
-    
+	.descricao-banner p {
+		font-size: 1.40rem;
+		line-height: 23px;
+	}
+
+	.destaque-ver-servicos-filho {
+		width: 40%;
+		line-height: 53px;
+	}
+
+	.background-servicos-recentes {
+		width: 48%;
+	}
+
+	.destaque-fotos-servicos img {
+		width: 48%;
+	}
+
+	.tipos-de-servicos-items {
+		width: 480px;
+	}
+
+	.secao-depoimento {
+		width: 92%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 50px;
+	}
+
+	.depoimento-items {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		text-align: center;
+	}
+
+	.img-estrategia {
+		width: 110px !important;
+		height: 110px !important;
+		border-radius: 100%;
+		margin: 0 auto;
+	}
+
 }
 
+@media (max-width: 991px) {
+
+	.tipos-de-servicos-items {
+		width: 362px;
+	}
+
+
+}

@@ -1,29 +1,8 @@
 /*ANIMAÇÃO PARA O TITULO DA SEÇÃO APRESENTAÇÃO DA PAGINA HOME*/
-.descricao-apresentacao h1{
-font-size: 3.75rem;
-margin-bottom: 10px;
-overflow: hidden; /* 
-Garante que o conteúdo não seja revelado até a animação */
-border-right: .10em solid rgba(60, 214, 219, 0.116); /* The typwriter cursor */
-white-space: wrap; /* Keeps the content on a single line */
-margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-animation: 
-typing 4.5s steps(40, end),
-blink-caret .7s step-end infinite;
+.descricao-banner h1 {
+	font-size: 3.75rem;
+	margin-bottom: 10px;
 }
-/* Define o efeito de digitação */
-@keyframes typing {
-from { width: 0 }
-to { width: 100% }
-}
-/* Define o efeito de digitação */
-@keyframes blink-caret {
-from, to { border-color: transparent }
-70% { border-color: rgba(8, 8, 8, 0.856); }
-}
-
-
-
 
 /*ANIMAÇÃO PARA O TITULO DA SEÇÃO APRESENTAÇÃO DA PAGINA SOBRE*/
 /*FONTE: https://www.google.com/search?q=anima%C3%A7%C3%A3o+para+o+texto+da+esquerda++aparecer+na+tela+ap%C3%B3s+carregar+a+
@@ -34,29 +13,36 @@ QRfDTtfSbHtjvAMt0fNxkV4hSqVsf8-GZbUionqB4ShLJ9z0eCJw&aep=10&ntc=1&mtid=VlgTad71O
 _4We9b7j9G8uW496293yjMIfvYnmMp_134laaS6X_j2Xjp-IoCBIX_wq-VUGNFroz9ymXacdbZ-anzOQN3lWlOVVwDd4G2YtRxY3ZUv8uzAEhGv3sUZ7ftR9M9NSvQkG
 gnRZ6xmBeZ1HrQuHn2aCrRVUs3bLb1Z_jhxX77vqDQaaT0Bxohg_6Fzd-08u1C_GCq6s3hzVezyFVCDlqjwP5LR088nK3f_3Rs3mXxxRRnrJy0f9Bt_ZltCCu5rcx-JH7
 O-13BLINlyXxr_z8_wWu-rWkKJGYJiM8V9O2fpWJhVbN7tdhFgbQ&csuir=1*/
-.descricao-apresentacao{
-opacity: 0;
-transform: translateX(-100px); /* Move 100px para a esquerda */
-/* Aplica a animação */
-animation-name: slideInLeft;
-animation-duration: 1.5s; /* Duração da animação */
-animation-timing-function: ease-out; /* Suaviza o final da animação */
-animation-delay: 0.4s; /* Atraso antes de começar a animação após o carregamento */
-animation-fill-mode: forwards; /* Mantém o estado final da animação */
+.descricao-banner {
+	opacity: 0;
+	transform: translateX(-100px);
+	/* Move 100px para a esquerda */
+	/* Aplica a animação */
+	animation-name: slideInLeft;
+	animation-duration: 1.5s;
+	/* Duração da animação */
+	animation-timing-function: ease-out;
+	/* Suaviza o final da animação */
+	animation-delay: 0.4s;
+	/* Atraso antes de começar a animação após o carregamento */
+	animation-fill-mode: forwards;
+	/* Mantém o estado final da animação */
 }
+
 /* Define os keyframes para a animação */
 @keyframes slideInLeft {
-0% {
-opacity: 0;
-transform: translateX(-100px); /* Início da animação (invisível, à esquerda) */
-}
-100% {
-opacity: 1;
-transform: translateX(0); /* Fim da animação (visível, na posição original) */
-}
-}
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+		/* Início da animação (invisível, à esquerda) */
+	}
 
-
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+		/* Fim da animação (visível, na posição original) */
+	}
+}
 
 
 /*ANIMAÇÃO PARA O LINK "FAZER ORÇAMENTO DA PAGINA HOME"*/
@@ -70,25 +56,47 @@ nY18WUwfjuOVSlvIbQYMgQmSV4PhDxA&ved=2ahUKEwjk7paa-d2QAxWIdvUHHR-fLZYQ0NsOegQIAxA
 5aeL19GJyH_jyQZdPIJRyxC2fQyxQwD_VA_B4sXHh9rETQ3TaubwuVbUcgo2xuoHBsobiihmN8IVQRpwLZvYraB5wO9Awpfm4LiYwp19xee6csk78j03HeSoMPNaQIx1lfe2G2w1n2nbJtBCp
 ZdQALvxXYvvZzuLTz6UXTAiKlxYpd8Dc4PQ-F1weer1CW7FtAP5tGyQonOVBB3DmyE-yaFJFhRZe4pBsnhxggq5pcXqsPljjPVWAYTBeqtXlX6Kjj53--f1tcgXjlbACTG270Xp12VVZj1u5mdgX
 UgQ&csuir=1&mtid=Gs0MaauQLYOVvr0PiIKx2AI*/
-.destaque-orcamento a{
-text-align: center;
-text-decoration: none;
-border: 2px dotted white;
-background: black;
-color: white;
-text-transform: uppercase;
-padding: 10px;
-border-radius: 10px;
-transition: transform 0.4s ease;
+.destaque-orcamento a {
+	text-align: center;
+	text-decoration: none;
+	border: 2px dotted white;
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 10px;
+	transition: transform 0.4s ease;
 }
-.destaque-orcamento a{
-animation: tremer 0.6s infinite;
+
+.destaque-orcamento a {
+	animation: tremer 0.6s infinite;
 }
+
 /* Define os quadros-chave da vibração */
 @keyframes tremer {
-0% { transform: translateX(0); } /* Posição inicial */
-25% { transform: translateX(-3px); } /* Move 3px para a esquerda */
-50% { transform: translateX(3px); } /* Move 3px para a direita */
-75% { transform: translateX(-3px); } /* Move 3px para a esquerda */
-100% { transform: translateX(0); } /* Retorna à posição inicial */
+	0% {
+		transform: translateX(0);
+	}
+
+	/* Posição inicial */
+	25% {
+		transform: translateX(-3px);
+	}
+
+	/* Move 3px para a esquerda */
+	50% {
+		transform: translateX(3px);
+	}
+
+	/* Move 3px para a direita */
+	75% {
+		transform: translateX(-3px);
+	}
+
+	/* Move 3px para a esquerda */
+	100% {
+		transform: translateX(0);
+	}
+
+	/* Retorna à posição inicial */
 }

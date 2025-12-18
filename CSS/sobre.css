@@ -1,340 +1,369 @@
-.secao-apresentacao-sobre{
-background-image: url(https://assets.nicepagecdn.com/11a8ddce/6135491/images/young-architect-standing-by-solar-panels-making-diagnostics-computer.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-height: 550px;
+.secao-banner-fundo-sobre{
+		background-image: url(https://assets.nicepagecdn.com/11a8ddce/6135491/images/young-architect-standing-by-solar-panels-making-diagnostics-computer.jpg);
+
+
 }
-.secao-apresentacao-sobre h2{
-font-size: 3rem;
-margin-bottom: 5px;
+
+
+.texto-banner-pag-sobre {
+	font-size: 1.25rem;
+	color: white;
 }
-.secao-apresentacao-sobre p{
-font-size: 1.2rem;
+
+.sobre {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }
-.sobre{
-margin-top: 50px;
-display: flex;
-align-items: center;
-text-align: center;
-}
+
 .descricao-sobre h1{
-font-size: 2.25rem;
+	font-size: 3rem;
 }
-.descricao-sobre p{
-text-align: start;
-font-size: 1.3rem;
-padding: 15px;
+
+.img-sobre {
+	width: 50%;
 }
-.img-sobre{
-width: 50%;
+
+.texto-neg-familia {
+	font-size: 1.3rem;
+	padding: 10px;
+	margin-right: 15px;
 }
-.texto-neg-familia{
-    font-size: 1.3rem;
-}
-/*FONTE */           
+
+/*FONTE */
 /*https://www.google.com/search?q=PERPLEX+NA+IMG+css&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQI
 RigATIHCAUQIRigAdIBCDY4NzJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&sei=aagUabbxA--XwbkPv9-24AE&udm=50&fbs=AIIjpHydJdUtNKrM02hj0s4n
 bm4yAFb4PvhjIUcDtaFHkK_tyspyDJg0-Y4Ji8bGEtEDNJF_QLt8mYL1Ky-sHdgJivrE677A-6HSRV-kn1DsqyQa91SRgsk7q-L5n4c0pDCrTlDhalcoTtr8AVUxm8-5
 0qKLbcJa1oFC3zedeUJnfRdBbSAeHsPihVtS5uYQbTX437kSnfhOciNXdfFB8I4S2aQvmi7vBg&ved=2ahUKEwik1Me29-yQAxXEhIQIHZDSOowQ0NsOegQIAxAB&ae
 p=10&ntc=1*/
 .parallax-section {
-background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
-height: 60vh; /* Define a altura da seção */
-width: 100vw;
-background-attachment: fixed; /* Fixa o fundo enquanto o conteúdo rola */
-background-repeat: no-repeat; /* Evita a repetição da imagem */
-background-size: cover; /* Garante que a imagem cubra toda a área */
-display: flex;
-justify-content: space-around;
-align-items:center;
-text-align: center;
-}
-.parallax-section-items{
-background: rgba(0, 0, 0, 0.445);
-width: 20%;
-height: 250px;
-color: white;
-padding: 10px;
-border-left: 5px solid white;
-border-bottom: 2px solid white;
-border-radius: 10px;
-line-height: 2;
-}
-.secao-estrategia{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 40px;
-}
-.estrategias-items {
-width: 40%;
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
-.numeracao-estrategia {
-width: 30px;
-font-weight: bold;
-font-size: 1.4rem;
-background: black;
-color: rgb(60, 214, 219);
-padding: 30px;
-border-radius: 50%;
-}
-.texto-estrategia{
-font-size: 1.2rem;
-line-height: 1.6;
-}
-.time{
-height: 600px;
-margin-top: 15px;
-margin-bottom: 20px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 90%;
-}
-.time h1{
-text-align: center;
-font-size: 2.5rem;
-}
-.quadro-time{
-display: flex;
-justify-content: space-around;
-align-items: center;
-}
-.info-time {
-text-align: center;
-line-height: 2;
-padding: 5px;
-margin-top: 25px;
-margin-bottom: 20px;
-}
-.img-profissionais{
-width:200px; 
-height: 200px;
-border-radius: 50%;
-}
-.img-redes-socias {
-width: 30px;
-height: 30px;
-}
-.info-time h5{
-font-weight: 400;
-font-size: 1.45rem;
-}
-.info-time h6{
-font-size: 1.15rem;
-margin-bottom: 5px;
-}
-/*responsividade SOBRE*/
-@media (max-width: 575px){
-    .secao-apresentacao-sobre {
-    height: 350px;
-}
-    .descricao-apresentacao {
-        padding: 5px;
-        width: auto;
-        position: relative;
-        top: 155px;
-        left: 5px;
-        width: 90%;
-    }
-    .secao-apresentacao-sobre h2 {
-    font-size: 2.25rem;
-    margin-bottom: 5px;
-}
-
-.secao-apresentacao-sobre p {
-    font-size: 1.1rem;
-    text-align: end;
-}
-
-.sobre {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-.descricao-sobre h1 {
-    font-size: 1.875rem;
-    margin-bottom: 20px;
-}
-.descricao-sobre p {
-    text-align: start;
-    font-size: 1.1rem;
-    padding: 10px;
-}
-
-.img-sobre {
-    width: 100%;
-}
-.texto-neg-familia {
-    font-size: 1.1rem;
-}
-
-.parallax-section {
-    background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
-    width: 100vw;
-    height: 90vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-    .parallax-section-items {
-        width: 44%;
-        height: 160px;
-        color: white;
-        padding: 15px;
-        border-radius: 10px;
-        line-height: 1.7;
-    }
-
-    .parallax-section-items img{
-        width: 70px;
-    }
-
-    .parallax-section-items h1{
-        font-size: 1.25rem;
-    }
-
-    .estrategias-items {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-}
-    .titulo-estrategia {
-        font-size: 1.875rem;
-        text-align: center;
-    }
-.texto-estrategia {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.time {
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-.time h1 {
-    text-align: center;
-    font-size: 1.875rem;
-}
-
-.quadro-time {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-.img-profissionais {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-}
-
-.entrar-em-contato {
-    margin-top: 50px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.entrar-em-contato h3{
-font-size: 1.875rem;
-font-weight: 100;
-width: auto;
-margin-top: 10px;   
-}
-
-}
-
-@media (min-width: 768px) and (max-width: 1199px){
-    .container {
-    width: 95%;
-    gap: 40px;
-}
-.img-sobre {
-    width: 51%;
-    height: 45vh;
-}
-.parallax-section {
-    background-position: center;
- 
-
+	background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
+	height: 60vh;
+	/* Define a altura da seção */
+	width: 100vw;
+	background-attachment: fixed;
+	/* Fixa o fundo enquanto o conteúdo rola */
+	background-repeat: no-repeat;
+	/* Evita a repetição da imagem */
+	background-size: cover;
+	/* Garante que a imagem cubra toda a área */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
 }
 
 .parallax-section-items {
-    background: rgba(0, 0, 0, 0.445);
-    width: auto;
-    height: 250px;
-    color: white;
-    padding: 20px;
-    border-left: 5px solid white;
-    border-bottom: 2px solid white;
-    border-radius: 10px;
-    line-height: 2;
+	width: 20%;
+	height: 200px;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	line-height: 2;
 }
 
-    .titulo-estrategia {
-        font-size: 3rem;
-        text-align: center;
-        margin-bottom: 25px;
-    }
 .secao-estrategia {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 40px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
 }
+
 .estrategias-items {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-left: 20px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
+
+.numeracao-estrategia {
+	width: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2rem;
+	background: black;
+	color: rgba(245, 211, 62, 0.959);
+	padding: 20px;
+	border-radius: 50%;
+
+}
+
+.texto-estrategia {
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
 .time {
-    height: 600px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 90%;
+	height: 600px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90%;
 }
 
 .time h1 {
-    text-align: center;
-    font-size: 3rem;
-}
-.entrar-em-contato {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+	text-align: center;
+	font-size: 3rem;
 }
 
-.entrar-em-contato h3 {
-    font-size: 3rem;
-    font-weight: 100;
-    width: auto;
-}
+.quadro-time {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
+.info-time {
+	text-align: center;
+	line-height: 2;
+	padding: 5px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.img-profissionais {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.img-redes-socias {
+	width: 30px;
+	height: 30px;
+}
+
+.info-time h5 {
+	font-weight: 400;
+	font-size: 1.45rem;
+}
+
+.info-time h6 {
+	font-size: 1.15rem;
+	margin-bottom: 5px;
+}
+
+/*responsividade SOBRE*/
+@media (max-width: 575px) {
+	.secao-banner-sobre {
+		height: 350px;
+	}
+
+	.descricao-banner {
+		padding: 5px;
+		width: auto;
+		position: relative;
+		top: 155px;
+		left: 5px;
+		width: 90%;
+	}
+
+	.secao-banner-sobre h2 {
+		font-size: 2.25rem;
+		margin-bottom: 5px;
+	}
+
+	.secao-banner-sobre p {
+		font-size: 1.1rem;
+		text-align: end;
+	}
+
+	.sobre {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.descricao-sobre h1 {
+		font-size: 1.875rem;
+		margin-bottom: 20px;
+	}
+
+	.descricao-sobre p {
+		text-align: start;
+		font-size: 1.1rem;
+		padding: 10px;
+	}
+
+	.img-sobre {
+		width: 100%;
+	}
+
+	.texto-neg-familia {
+		font-size: 1.1rem;
+	}
+
+	.parallax-section {
+		background-image: url(https://wallpapers.com/images/hd/electrician-checking-voltmeter-zpluh1tf2du87juu.jpg);
+		width: 100vw;
+		height: 90vh;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.parallax-section-items {
+		width: 44%;
+		height: 160px;
+		color: white;
+		padding: 15px;
+		border-radius: 10px;
+		line-height: 1.7;
+	}
+
+	.parallax-section-items img {
+		width: 70px;
+	}
+
+	.parallax-section-items h1 {
+		font-size: 1.25rem;
+	}
+
+	.estrategias-items {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 10px;
+	}
+
+	.titulo-estrategia {
+		font-size: 1.875rem;
+		text-align: center;
+	}
+
+	.texto-estrategia {
+		font-size: 1.1rem;
+		line-height: 1.6;
+	}
+
+	.time {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.time h1 {
+		text-align: center;
+		font-size: 1.875rem;
+	}
+
+	.quadro-time {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.img-profissionais {
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+	}
+
+	.entrar-em-contato {
+		margin-top: 50px;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.entrar-em-contato h3 {
+		font-size: 1.875rem;
+		font-weight: 100;
+		width: auto;
+		margin-top: 10px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.container {
+		width: 95%;
+		gap: 40px;
+	}
+
+	.img-sobre {
+		width: 51%;
+		height: 45vh;
+	}
+
+	.parallax-section {
+		background-position: center;
+
+
+	}
+
+	.parallax-section-items {
+		background: rgba(0, 0, 0, 0.445);
+		width: auto;
+		height: 250px;
+		color: white;
+		padding: 20px;
+		border-left: 5px solid white;
+		border-bottom: 2px solid white;
+		border-radius: 10px;
+		line-height: 2;
+	}
+
+	.titulo-estrategia {
+		font-size: 3rem;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.secao-estrategia {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+
+	.estrategias-items {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-left: 20px;
+	}
+
+	.time {
+		height: 600px;
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 90%;
+	}
+
+	.time h1 {
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.entrar-em-contato {
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.entrar-em-contato h3 {
+		font-size: 3rem;
+		font-weight: 100;
+		width: auto;
+	}
+}
